@@ -1,0 +1,38 @@
+@import url('./layer.css');
+@import url('./sakai/_splash.css') layer(primevue);
+@import url('./sakai/_main.css') layer(primevue);
+@import url('./sakai/_topbar.css') layer(primevue);
+@import url('./sakai/_menu.css') layer(primevue);
+@import url('./sakai/_content.css') layer(primevue);
+@import url('./sakai/_footer.css') layer(primevue);
+@import url('./sakai/_responsive.css') layer(primevue);
+@import url('./sakai/_utils.css') layer(primevue);
+@import url('./sakai/_typography.css') layer(primevue);
+@import url('./_overrides.css') layer(primevue);
+
+/* AppTopbar */
+#userLabel {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/*
+  * Menu
+  */
+#actionsMenuOverlay {
+  .red-500 {
+    .p-menuitem-icon,
+    .p-menuitem-text {
+      color: var(--red-500);
+    }
+  }
+}
+
+/*
+  * Form
+  */
+.required-field::after {
+  content: ' *';
+  font-weight: bold;
+  color: red;
+}
